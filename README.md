@@ -21,4 +21,8 @@ create /etc/rsyncd.conf
        read only = no
        list = yes
        secrets file = /etc/rsyncd.secret
-       " > rsyncd.conf
+       " > /etc/rsyncd.conf
+
+create /etc/rsync
+
+    echo -e "user:user" > /etc/rsyncd.secret
