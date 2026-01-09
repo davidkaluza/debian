@@ -10,14 +10,15 @@ rsync
 
 /etc/rsyncd.conf
 
-    motd file = /etc/rsyncd.motd
+    echo -e "motd file = /etc/rsyncd.motd
     log file = /var/log/rsyncd.log
     pid file = /var/run/rsyncd.pid
     lock file = /var/run/rsync.lock
-
+    
     [my_path]
-       path = /opt/flowy
+       path = /opt/rsync
        comment = My Rsync Server
        read only = no
        list = yes
        secrets file = /etc/rsyncd.secret
+       " > rsyncd.conf
