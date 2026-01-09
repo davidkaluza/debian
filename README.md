@@ -8,7 +8,7 @@ rsync
 
     apt-get install rsync
 
-/etc/rsyncd.conf
+create /etc/rsyncd.conf
 
     echo -e "motd file = /etc/rsyncd.motd
     log file = /var/log/rsyncd.log
