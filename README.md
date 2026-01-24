@@ -4,6 +4,10 @@ change font size in tty
 
     dpkg-reconfigure console-setup
 
+.bashrc
+    
+    export ...
+
 rsync
 
     apt-get install rsync
